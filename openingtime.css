@@ -1,0 +1,188 @@
+@charset "utf-8";
+html{
+    background-color: rgb(244, 221, 188);
+    max-width: 1024px;
+    max-height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    width: 100%;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    background: rgb(18, 90, 50); 
+    font-family: Times New Roman; 
+    height: 200px;
+    font-size: 20px;
+    margin-top: -1%;
+}
+@media(max-width: 768px){
+    header{
+        padding: 20px;
+    }
+}
+@media(max-height: 1024px){
+    header{
+        padding: 20px;
+    }
+}
+.logo{
+    position: fixed;
+    position: relative;
+    bottom: 130px;
+    right: 70px;
+}
+.img1{
+    float: left;
+}
+.img2{
+    float: left;
+}
+button{
+    
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    padding: 10px;
+}
+button:hover {background-color: #0c8f10}
+button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+input[type=text]{
+    float: right;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+/*Navigation Bar*/
+nav{   
+    text-align: center;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+}
+nav ul li{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.dropdown{
+    display: none;
+    border-radius: 10px;
+}
+.dropdown a{
+    color: rgb(255,255,255);
+    text-shadow: rgba(0,0,0,1)1px -1px 1px;
+    transform: scale(1,1) translateY(0px);
+    transition: all 0.3s linear; 
+}
+.dropdown a:hover {
+    text-shadow: rgba(0,0,0,0.5)0px 15px 4px;
+    transform: scale(3,3) translateY(-15px);
+ }
+.menu-bar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: rgb(87, 134, 64);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.menu-bar ul li:hover .dropdown ul{
+    display: block;
+    margin: 0px;
+    border-radius: 10px;
+}
+.menu-bar ul li:hover .dropdown ul li{
+    margin-top: 10px;
+    margin-left: -35px;
+    padding: 4px;
+    width: auto;
+    background-color: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .dropdown ul li a:hover{
+    color: rgb(32, 78, 32);
+}
+
+/*table*/
+section{
+    margin-top: 0px;
+    background-color: rgb(41, 107, 71);
+    font-family: 'Times New Roman';
+}
+
+table.programs,th,td{
+    border: 1px black solid;
+}
+col.timeColumn{
+    width: 10%;
+    background-color: #d8baab;
+}
+col.wDayColumns{
+    width: 11%;
+    background-color: #d3aa74;
+    
+}
+col.wEndColumns{
+    background-color: #9e7c5a;
+    width: 17%;
+        
+}
+tbody{
+    text-align: center;
+}
+td#Open{
+    background-color: #385385;
+}
+td#close{
+    background-color: #8b9aac;
+}
+
+
+/*footer*/
+footer{
+    border:2px solid black;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    background-color: #eec0e8;
+    color: black;
+    text-decoration: solid;
+}
+
+div#facebook{
+    position: absolute;
+    top: 10px;
+    left: -900px;
+}
+
+div#instragram{
+    position: absolute;
+    top: 50px;
+    left: -900px;
+    
+}
+
+div#messenger{
+    position: absolute;
+    top: 90px;
+    left: -900px;
+}

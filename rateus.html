@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Your feedback matters</title>
+    <link href="rateus.css" rel="stylesheet" />
+</head>
+
+<body>
+   <section>      
+      <a href="home.html" style="text-decoration: none;"><img class="home" src="homeicon.jpg" width="40" height="40"></a>
+      <h1>Your feedback matters</h1>
+        <p>Thank you for choosing <strong>DO EAT</strong>. We are committed to providing the best experience possible.</p>
+        <form action="http://www.example.com/doeat/rate" method="post">
+             
+         <fieldset id="custReview">
+            <legend>//  <strong>Are you satisfied with us</strong>  //</legend>
+            <aside>
+               <div class="insert"><img src="insert.jpg" width="35" height="35"></div>
+               <div class="img1"><a href="https://www.instagram.com/doeatrestaurant_/"><img src="instagram.png" width="30" height="30"></a></div>
+               <div class="img2"><a href="https://www.facebook.com/do.eat.restaurant.95187"><img src="facebook.png" width="30" height="30"></a></div>
+            </aside>
+               <div class="name">
+              <label for="nameBox">Name: </label>
+              <input name="custName" id="nameBox" type="text" placeholder="Anonymous" required />
+            </div>
+            
+           <div class="order">
+              <input name="orderType" id="takeaway" type="radio" checked /><label for="takeaway">Take away</label>
+              <input name="orderType" id="dinein" type="radio" checked /><label for="dinein">Dine In</label>
+            </div>
+
+            <div class="star-rate" onclick="rate()">
+               <input type="radio" id="5star" name="rate" value="5" />
+               <label for="5star" class="star">★</label>
+               <input type="radio" id="4star" name="rate" value="4" />
+               <label for="4star" class="star">★</label>
+               <input type="radio" id="3star" name="rate" value="3" />
+               <label for="3star" class="star">★</label>
+               <input type="radio" id="2star" name="rate" value="2" />
+               <label for="2star" class="star">★</label>
+               <input type="radio" id="1star" name="rate" value="1" />
+               <label for="1star" class="star">★</label>
+            </div>
+            
+            <textarea name="rate" id="rateBox" placeholder="Enter your feedbacks"></textarea>
+         </fieldset>
+  
+           <div>
+              <button type="button" onclick="alert('Thanks for your feedback.')">Post Out NOW !</button>
+           </div>
+        </form>
+     </section>
+
+     <script>
+      function myFunction() {
+         var five = document.getElementById('1-star').checked;
+         document.getElementById("one").innerHTML = five;
+      }
+     </script>
+</body>
+</html>
